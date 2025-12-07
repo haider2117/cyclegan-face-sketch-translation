@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Generator</title>
+  </head>
+  <body>
+    <h1>Image &lt;-&gt; Sketch Generator</h1>
+    <form action="/generate" method="post" enctype="multipart/form-data">
+      <label>Select image to upload:</label><br>
+      <input type="file" name="image" accept="image/*" required><br><br>
+      <label>Direction:</label><br>
+      <input type="radio" id="a2b" name="direction" value="A2B" checked>
+      <label for="a2b">A -> B</label><br>
+      <input type="radio" id="b2a" name="direction" value="B2A">
+      <label for="b2a">B -> A</label><br><br>
+      <button type="submit">Generate</button>
+    </form>
+    <p>Note: If the repository contains only state_dict checkpoints, the app will return the input image as a fallback because the model class is not available.</p>
+  </body>
+</html>

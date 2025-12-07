@@ -1,0 +1,10 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.vscode/
+*.pyc
+.DS_Store
+
+# If your model files are large, consider using Git LFS instead of ignoring them here.

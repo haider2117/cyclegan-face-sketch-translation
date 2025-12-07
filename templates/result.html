@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Result</title>
+  </head>
+  <body>
+    <h1>Generated Image</h1>
+    {% if message %}
+      <p><strong>Note:</strong> {{ message }}</p>
+    {% endif %}
+    <img src="{{ url_for('static', filename='generated/' + filename) }}" alt="generated" style="max-width:90%;height:auto;" />
+    <p><a href="/">Back</a></p>
+  </body>
+</html>
